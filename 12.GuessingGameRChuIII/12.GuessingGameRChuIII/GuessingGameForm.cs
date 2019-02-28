@@ -40,22 +40,22 @@ namespace _12.GuessingGameRChuIII
             //Check if the user got the number correct and displays if they did or did not.
             if (numGuess == number)
             {
+                SoundPlayer ding = new SoundPlayer(@"Correct.wav");
+                ding.Play();  //Plays sound
                 lblAnswer.Show(); //Shows the lable
                 picYesORNo.Show(); //Shows the image
                 lblAnswer.Text = "Your Answer was Correct!"; //Changes text
                 picYesORNo.Image = Properties.Resources.checkmark;
-                SoundPlayer ding = new SoundPlayer(@"Correct.wav");
-                ding.Play();  //Plays sound
 
             }
             else
             {
+                SoundPlayer dong = new SoundPlayer(@"Wrong.wav");
+                dong.Play(); //Plays sound
                 lblAnswer.Show(); //Shows the lable
                 picYesORNo.Show(); //Shows the image
                 lblAnswer.Text = "Your Answer was Incorrect"; //Changes text
                 picYesORNo.Image = Properties.Resources.red_x;
-                SoundPlayer dong = new SoundPlayer(@"Wrong.wav");
-                dong.Play(); //Plays sound
             }
         }
     }
