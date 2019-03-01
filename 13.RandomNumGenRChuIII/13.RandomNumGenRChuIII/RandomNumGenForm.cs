@@ -3,7 +3,7 @@
  * Created on: 28-02-2019
  * Created for: ICS3U Programming
  * Daily Assignment – Day #17 - Random Number Generator
- * This program...Generates a random number when a button is clicked
+ * This program...Generates a random number when a button is clicked 
 */
 
 using System;
