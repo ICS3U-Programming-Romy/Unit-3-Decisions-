@@ -1,6 +1,6 @@
 ﻿/*
- * Created by: First Last
- * Created on: Day-Month-Year
+ * Created by: Romy I. Chu III
+ * Created on: 05-03-2019
  * Created for: ICS3U Programming
  * Daily Assignment – Day #18 - Rock, Paper, Scissors
  * This program...
@@ -28,29 +28,30 @@ namespace _14.RockPaperScissorRChuIII
         {
             InitializeComponent();
             ranNumGen = new Random();
+            grbComputerChoice.Enabled = false;
         }
 
         private void btnCheck_Click(object sender, EventArgs e)
         {
             //Declares the variables
             int playerChoice, computerChoice;
-            const int rock = 1;
-            const int paper = 2;
-            const int scissor = 3;
+            const int ROCK = 1;
+            const int PAPER = 2;
+            const int SCISSOR = 3;
 
             //This gets the players choices, if the player's choice is null (nothing) it is set to 0
             #region Player Radio Buttons
             if (radPlayerRock.Checked == true)
             {
-                playerChoice = rock;
+                playerChoice = ROCK;
             }
             else if (radPlayerPaper.Checked == true)
             {
-                playerChoice = paper;
+                playerChoice = PAPER;
             }
             else if (radPlayerScissor.Checked == true)
             {
-                playerChoice = scissor;
+                playerChoice = SCISSOR;
             }
             else
             {
@@ -61,55 +62,59 @@ namespace _14.RockPaperScissorRChuIII
 
 
             #region Computer Radio Buttons
-            if (computerChoice == rock)
+            if (computerChoice == ROCK)
             {
                 this.radComputerRock.Checked = true;
             }
-            else if (computerChoice == paper)
+            else if (computerChoice == PAPER)
             {
                 this.radComputerPaper.Checked = true;
             }
-            else if (computerChoice == scissor)
+            else if (computerChoice == SCISSOR)
             {
                 this.radComputerScissor.Checked = true;
             }
             #endregion
 
+            if (playerChoice == 0)
+            {
+                lblWinLose.Text = "Yo. Choose something. No one Wins!";
+            }
 
             if (playerChoice == computerChoice)
             {
                 lblWinLose.Text = "It's a Tie!!";
             }
 
-            else if (playerChoice == rock)
+            else if (playerChoice == ROCK)
             {
-                if (computerChoice == paper)
+                if (computerChoice == PAPER)
                 {
                     lblWinLose.Text = "You Lose!!!";
                 }
-                if (computerChoice == scissor)
+                if (computerChoice == SCISSOR)
                 {
                     lblWinLose.Text = "You Win !!!";
                 }
             }
-            else if (playerChoice == paper)
+            else if (playerChoice == PAPER)
             {
-                if (computerChoice == scissor)
+                if (computerChoice == SCISSOR)
                 {
                     lblWinLose.Text = "You Lose!!!";
                 }
-                if (computerChoice == rock)
+                if (computerChoice == ROCK)
                 {
                     lblWinLose.Text = "You Win !!!";
                 }
             }
-            else if (playerChoice == scissor)
+            else if (playerChoice == SCISSOR)
             {
-                if (computerChoice == rock)
+                if (computerChoice == ROCK)
                 {
                     lblWinLose.Text = "You Lose!!!";
                 }
-                if (computerChoice == paper)
+                if (computerChoice == PAPER)
                 {
                     lblWinLose.Text = "You Win !!!";
                 }
