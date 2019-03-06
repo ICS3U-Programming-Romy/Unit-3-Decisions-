@@ -3,7 +3,7 @@
  * Created on: 05-03-2019
  * Created for: ICS3U Programming
  * Daily Assignment – Day #18 - Rock, Paper, Scissors
- * This program...
+ * This program... Allows a person to play Rock, Paper, Scissors against a computer
 */
 
 using System;
@@ -76,6 +76,7 @@ namespace _14.RockPaperScissorRChuIII
             }
             #endregion
 
+            #region Win Lose Cases
             if (playerChoice == 0)
             {
                 lblWinLose.Text = "Yo. Choose something. No one Wins!";
@@ -119,6 +120,7 @@ namespace _14.RockPaperScissorRChuIII
                     lblWinLose.Text = "You Win !!!";
                 }
             }
+            #endregion
         }
     }
 }
