@@ -33,6 +33,7 @@
             this.picYesORNo = new System.Windows.Forms.PictureBox();
             this.lblAnswer = new System.Windows.Forms.Label();
             this.btnGuess = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picYesORNo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,11 +90,23 @@
             this.btnGuess.UseVisualStyleBackColor = true;
             this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
+            // btnPlay
+            // 
+            this.btnPlay.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlay.Location = new System.Drawing.Point(110, 37);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(264, 97);
+            this.btnPlay.TabIndex = 6;
+            this.btnPlay.Text = "Play";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
+            // 
             // frmGuessingGame
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(536, 191);
+            this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.btnGuess);
             this.Controls.Add(this.lblAnswer);
             this.Controls.Add(this.picYesORNo);
@@ -114,6 +127,7 @@
         private System.Windows.Forms.PictureBox picYesORNo;
         private System.Windows.Forms.Label lblAnswer;
         private System.Windows.Forms.Button btnGuess;
+        private System.Windows.Forms.Button btnPlay;
     }
 }
 
