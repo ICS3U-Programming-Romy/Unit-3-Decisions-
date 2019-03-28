@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace _20.UnicodeAtoZRChuIII
+namespace _20.UnicodeRChuIII
 {
-    static class Program
+    static class Unicode
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace _20.UnicodeAtoZRChuIII
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UnicodeAtoZForm());
+            Application.Run(new frmUnicode());
         }
     }
 }

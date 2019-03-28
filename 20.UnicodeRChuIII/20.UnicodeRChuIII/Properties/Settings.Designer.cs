@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _20.UnicodeAtoZRChuIII.Properties
+namespace _20.UnicodeRChuIII.Properties
 {
 
 

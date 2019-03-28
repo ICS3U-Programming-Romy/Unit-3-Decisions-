@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{62E6A2AE-E6B3-4349-8A05-A6D687455B1E}</ProjectGuid>
+    <ProjectGuid>{00C68684-971D-4A71-B1D4-C823C82DB32A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_20.UnicodeAtoZRChuIII</RootNamespace>
-    <AssemblyName>20.UnicodeAtoZRChuIII</AssemblyName>
+    <RootNamespace>_20.UnicodeRChuIII</RootNamespace>
+    <AssemblyName>20.UnicodeRChuIII</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,17 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnicodeAtoZForm.cs">
+    <Compile Include="UnicodeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UnicodeAtoZForm.Designer.cs">
-      <DependentUpon>UnicodeAtoZForm.cs</DependentUpon>
+    <Compile Include="UnicodeForm.Designer.cs">
+      <DependentUpon>UnicodeForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UnicodeAtoZForm.resx">
-      <DependentUpon>UnicodeAtoZForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <None Include="UnicodeAtoZ" />
+    <Compile Include="Unicode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="UnicodeForm.resx">
+      <DependentUpon>UnicodeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
