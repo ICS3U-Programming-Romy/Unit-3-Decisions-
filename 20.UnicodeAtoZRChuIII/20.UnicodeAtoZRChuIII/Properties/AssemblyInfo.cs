@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("18.PerfectSquareRootsRChuIII")]
+[assembly: AssemblyTitle("20.UnicodeAtoZRChuIII")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("18.PerfectSquareRootsRChuIII")]
+[assembly: AssemblyProduct("20.UnicodeAtoZRChuIII")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("b04c2bc7-24b3-40c6-bb99-fa781f4a0e96")]
+[assembly: Guid("62e6a2ae-e6b3-4349-8a05-a6d687455b1e")]
 
 // Version information for an assembly consists of the following four values:
 //

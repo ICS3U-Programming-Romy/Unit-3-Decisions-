@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B04C2BC7-24B3-40C6-BB99-FA781F4A0E96}</ProjectGuid>
+    <ProjectGuid>{62E6A2AE-E6B3-4349-8A05-A6D687455B1E}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_18.PerfectSquareRootsRChuIII</RootNamespace>
-    <AssemblyName>18.PerfectSquareRootsRChuIII</AssemblyName>
+    <RootNamespace>_20.UnicodeAtoZRChuIII</RootNamespace>
+    <AssemblyName>20.UnicodeAtoZRChuIII</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,17 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PerfectSquareRootsForm.cs">
+    <Compile Include="UnicodeAtoZForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PerfectSquareRootsForm.Designer.cs">
-      <DependentUpon>PerfectSquareRootsForm.cs</DependentUpon>
+    <Compile Include="UnicodeAtoZForm.Designer.cs">
+      <DependentUpon>UnicodeAtoZForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PerfectSquareRoots.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PerfectSquareRootsForm.resx">
-      <DependentUpon>PerfectSquareRootsForm.cs</DependentUpon>
+    <EmbeddedResource Include="UnicodeAtoZForm.resx">
+      <DependentUpon>UnicodeAtoZForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="UnicodeAtoZ" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
