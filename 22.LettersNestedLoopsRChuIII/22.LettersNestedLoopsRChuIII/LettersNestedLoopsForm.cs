@@ -34,10 +34,12 @@ namespace _22.LettersNestedLoopsRChuIII
             //clears the list
             lstLetters.Items.Clear();
 
+            //Lists all of the stuff and things
             for (unicodeLetterCaps = 65; unicodeLetterCaps <= 90; unicodeLetterCaps++)
             {
                 for(unicodeLetterLowCase = 97; unicodeLetterLowCase <= 122; unicodeLetterLowCase++)
                 {
+                    //Converts the integers to their unicode value and adds them to the list box.
                     lstLetters.Items.Add(Char.ConvertFromUtf32(unicodeLetterCaps) + " -> " + Char.ConvertFromUtf32(unicodeLetterLowCase));
                 }
             }
