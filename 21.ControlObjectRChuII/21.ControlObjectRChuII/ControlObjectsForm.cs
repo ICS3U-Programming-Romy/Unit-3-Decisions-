@@ -25,18 +25,21 @@ namespace _21.ControlObjectRChuII
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClick_Click(object sender, EventArgs e)
         {
+            //For every object in this form that is from the Control class......
             foreach (Control aControlObject in this.Controls)
             {
+                //Change thier background color to Hot Pink
                 aControlObject.BackColor = Color.HotPink;
 
+                //And if the obejct is of type 'label'.......
                 if (aControlObject.GetType() == typeof(Label))
                 {
-                    aControlObject.BackColor = Color.Blue;
-                    aControlObject.ForeColor = Color.White;
-                    aControlObject.Location = new Point(110, 140);
-                    lblYes.Text = "This has changed";
+                    aControlObject.BackColor = Color.Blue;         //Change the background color to Blue
+                    aControlObject.ForeColor = Color.White;        //Change the text color to White
+                    aControlObject.Location = new Point(110, 140); //Move the object to point (110, 140)
+                    lblYes.Text = "This has changed";              //Change what the label says to "This has changed"
                 }
             }
         }

@@ -34,13 +34,13 @@
             // 
             // btnClick
             // 
-            this.btnClick.Location = new System.Drawing.Point(94, 81);
+            this.btnClick.Location = new System.Drawing.Point(166, 46);
             this.btnClick.Name = "btnClick";
-            this.btnClick.Size = new System.Drawing.Size(75, 23);
+            this.btnClick.Size = new System.Drawing.Size(106, 23);
             this.btnClick.TabIndex = 0;
-            this.btnClick.Text = "button1";
+            this.btnClick.Text = "Fancy Button";
             this.btnClick.UseVisualStyleBackColor = true;
-            this.btnClick.Click += new System.EventHandler(this.button1_Click);
+            this.btnClick.Click += new System.EventHandler(this.btnClick_Click);
             // 
             // lblYes
             // 
